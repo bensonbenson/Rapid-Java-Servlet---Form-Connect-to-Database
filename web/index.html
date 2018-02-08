@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Staff Registration </title>
+	</head>
+	<body>
+           
+            <fieldset>
+                <legend>View, Insert, or Update Staff</legend>
+		<form method = "POST" action = "StaffServlet">
+			<p>
+				ID <input type = "text" name = "id"><font color = "#FF0000">*</font>
+			</p>
+			<p>
+				Last Name <input type = "text" name = "lastName">&nbsp;
+				First Name <input type = "text" name = "firstName">&nbsp;
+				Middle Initial <input type = "text" name = "mi" size = "1" maxlength = "1">
+			</p>
+			<p>
+				Address <input type = "text" name = "address">
+			</p>
+			<p>
+				City <input type = "text" name = "city"> &nbsp;
+				State <input type = "text" name = "state" size = "2" maxlength = "2">
+			</p>
+			<p>
+				Telephone <input type = "text" name = "phone" maxlength = "10"> &nbsp;
+				Email <input type = "text" name = "email">
+			</p>
+			<p>
+				<input type = "submit" name = "view" value = "View"> &nbsp;
+				<input type = "submit" name = "insert" value = "Insert"> &nbsp;
+				<input type = "submit" name = "update" value = "Update"> &nbsp;
+				<input type = "submit" name = "reset" value = "Reset">
+			</p>
+                        <p>
+                            <font color = "#FF0000">* required field</font>
+                        </p>
+		</form>
+            </fieldset>
+	</body>	
+</html>
